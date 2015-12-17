@@ -1,4 +1,4 @@
-# mygoapp
+# mygoapp - adrians simple webserver with one page :-)
 
 1) docker build -t mygoapp .
 
