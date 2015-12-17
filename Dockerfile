@@ -1,7 +1,7 @@
 FROM golang
- 
-ADD . /go/src/ https://github.com/ahausamm/mygoapp.git
-RUN go install https://github.com/ahausamm/mygoapp.git
-ENTRYPOINT /go/bin/basic_web_server
+
+RUN go get github.com/ahausamm/mygoapp
+RUN go install github.com/ahausamm/mygoapp
+ENTRYPOINT /go/bin/mygoapp
  
 EXPOSE 8080
